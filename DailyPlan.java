@@ -8,46 +8,73 @@ public class DailyPlan {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Step 1: Read available hours and convert to minutes.
+        // Step 1: Use askString to read profile.
         // TODO:
-        // System.out.print("How many hours can you study today? ");
-        // double availableHours = scanner.nextDouble();
-        // int availableMinutes = (int) (availableHours * 60);
-        // scanner.nextLine(); // consume newline
+        // String name = askString(scanner, "What is your name? ");
+        // String mainSubject = askString(scanner, "What is your main subject today? ");
 
-        // Step 2: Read 3 task minutes into an array.
+        // Step 2: Use askInt / askString for tasks.
+        String[] taskNames = new String[3];
         int[] taskMinutes = new int[3];
 
         // TODO:
         // for (int i = 0; i < 3; i++) {
-        //     System.out.print("Enter minutes for task " + (i + 1) + ": ");
-        //     taskMinutes[i] = scanner.nextInt();
+        //     System.out.println("\nTask " + (i + 1) + ":");
+        //     taskNames[i] = askString(scanner, "  Name: ");
+        //     taskMinutes[i] = askInt(scanner, "  Estimated minutes: ");
         // }
-        //
-        // scanner.nextLine(); // consume newline if needed
 
-        // Step 3: Use the method calculateTotalMinutes to get the total.
-        // TODO:
-        // int totalPlannedMinutes = calculateTotalMinutes(taskMinutes);
+        // Step 3: Use a method from Lab 8 (or reimplement) to calculate total minutes.
+        // TODO: int totalPlannedMinutes = calculateTotalMinutes(taskMinutes);
 
-        // Step 4: Print totals and time advice (can reuse if/else from Lab 7).
-        // TODO: Implement the comparison logic here or in another method.
+        // Optional: compare to available time, like before.
 
         scanner.close();
     }
 
     /**
-     * Calculates the sum of all elements in the minutes array.
+     * Reads a full line of text after printing a prompt.
+     */
+    private static String askString(Scanner scanner, String prompt) {
+        // TODO:
+        // 1. Print the prompt.
+        // 2. Read a full line of input using scanner.nextLine().
+        // 3. Return the line.
+        //
+        // Example:
+        // System.out.print(prompt);
+        // return scanner.nextLine();
+
+        return ""; // temporary so code compiles
+    }
+
+    /**
+     * Reads an integer from the console after printing a prompt.
+     */
+    private static int askInt(Scanner scanner, String prompt) {
+        // TODO:
+        // 1. Print the prompt.
+        // 2. Use scanner.nextInt() to read an int.
+        // 3. Consume the leftover newline using scanner.nextLine().
+        // 4. Return the int.
+        //
+        // Example:
+        // System.out.print(prompt);
+        // int value = scanner.nextInt();
+        // scanner.nextLine();
+        // return value;
+
+        return 0; // temporary so code compiles
+    }
+
+    /**
+     * Same as Lab 8 – helper to sum minutes.
      */
     private static int calculateTotalMinutes(int[] minutes) {
-        // TODO: Implement the loop to sum all elements and return the total.
-        // int total = 0;
-        // for (int i = 0; i < minutes.length; i++) {
-        //     total += minutes[i];
-        // }
-        // return total;
-
-        // Temporary return so code compiles before students fill it:
-        return 0;
+        int total = 0;
+        for (int i = 0; i < minutes.length; i++) {
+            total += minutes[i];
+        }
+        return total;
     }
 }
