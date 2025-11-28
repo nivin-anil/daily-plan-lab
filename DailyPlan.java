@@ -1,21 +1,31 @@
-class DailyPlan {
+import java.util.Scanner;
+
+public class DailyPlan {
+
     public static void main(String[] args) {
-        // Header (reuse from Lab 1)
         System.out.println("=======================================");
         System.out.println("      DAILY STUDY SNAPSHOT (P1)       ");
         System.out.println("=======================================");
 
-        // Step 1: Declare variables for the student's profile.
-        // TODO: Replace "TODO" with actual values or keep as placeholders.
-        String name = "TODO_NAME";
-        String mainSubject = "TODO_SUBJECT";
-        String level = "TODO_LEVEL"; // e.g., "Beginner", "Intermediate", "Advanced"
+        // Step 1: Create a Scanner to read from the console.
+        Scanner scanner = new Scanner(System.in);
 
-        // Step 2: Print the profile using the variables.
-        // TODO: Use concatenation (+) to build meaningful sentences.
-        // Example:
-        // System.out.println("Student: " + name);
-        // System.out.println("Main subject: " + mainSubject);
-        // System.out.println("Level: " + level);
+        // Step 2: Ask the user for their profile details.
+        // TODO: Use System.out.print to ask:
+        //  - "What is your name? "
+        //  - "What is your main subject today? "
+        //  - "What is your current level? (Beginner / Intermediate / Advanced) "
+        //
+        // TODO: Use scanner.nextLine() to read each answer into String variables:
+        //  - name
+        //  - mainSubject
+        //  - level
+
+        // Step 3: Print a welcome message that uses the input values.
+        // Example (students need to implement):
+        // System.out.println("Welcome, " + name + "! Let's plan your " + mainSubject + " study day.");
+
+        // Always good practice to close the scanner (we'll refine this later in bigger programs).
+        scanner.close();
     }
-}   
+}
