@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class P1Lab4 {
+public class DailyPlan {
 
     public static void main(String[] args) {
         System.out.println("=======================================");
@@ -9,24 +9,27 @@ public class P1Lab4 {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Step 1: Ask for basic profile (can be brief here).
-        // TODO: Ask for name and mainSubject using nextLine(), like in Lab 3.
-        // String name = ...
-        // String mainSubject = ...
+        // Step 1: Ask for name (optional here if already done before).
+        // TODO: String name = scanner.nextLine(); etc. if you want.
 
-        // Step 2: Ask how many hours they can study today.
-        // TODO: Prompt: "How many hours can you study today? "
-        // Use scanner.nextDouble() to read a double into availableHours.
-        // double availableHours = ...
+        // Step 2: Create an array to store 3 task names.
+        String[] taskNames = new String[3];
 
-        // Step 3: Convert hours to minutes using arithmetic and casting.
-        // TODO: Compute availableMinutes as int:
-        // int availableMinutes = (int) (availableHours * 60);
+        System.out.println("Enter your top 3 tasks for today:");
 
-        // Step 4: Print a short summary showing hours and minutes.
-        // Example:
-        // System.out.println("You can study for " + availableHours + " hours today.");
-        // System.out.println("That is about " + availableMinutes + " minutes.");
+        // Step 3: Use a for loop to read task names from the user.
+        // TODO:
+        // for (int i = 0; i < 3; i++) {
+        // System.out.print("Task " + (i + 1) + " name: ");
+        // taskNames[i] = scanner.nextLine();
+        // }
+
+        // Step 4: Print all the tasks entered.
+        // TODO:
+        // System.out.println("\nHere are your tasks:");
+        // for (int i = 0; i < 3; i++) {
+        // System.out.println((i + 1) + ") " + taskNames[i]);
+        // }
 
         scanner.close();
     }
