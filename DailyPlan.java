@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class DailyPlan {
-
     public static void main(String[] args) {
         System.out.println("=======================================");
         System.out.println("      DAILY STUDY SNAPSHOT (P1)       ");
@@ -9,33 +8,46 @@ public class DailyPlan {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Step 1: Read available time (hours → minutes) as in Lab 6.
-        // double availableHours = ...
-        // int availableMinutes = ...
+        // Step 1: Read available hours and convert to minutes.
+        // TODO:
+        // System.out.print("How many hours can you study today? ");
+        // double availableHours = scanner.nextDouble();
+        // int availableMinutes = (int) (availableHours * 60);
+        // scanner.nextLine(); // consume newline
 
-        // TODO: Implement the code to read hours and compute availableMinutes.
-
-        // Step 2: Read 3 task durations and compute totalPlannedMinutes.
+        // Step 2: Read 3 task minutes into an array.
         int[] taskMinutes = new int[3];
 
-        // TODO: Ask for 3 task minutes and sum them into totalPlannedMinutes.
-        // int totalPlannedMinutes = 0;
+        // TODO:
         // for (int i = 0; i < 3; i++) {
         //     System.out.print("Enter minutes for task " + (i + 1) + ": ");
         //     taskMinutes[i] = scanner.nextInt();
-        //     totalPlannedMinutes += taskMinutes[i];
         // }
+        //
+        // scanner.nextLine(); // consume newline if needed
 
-        // Step 3: Compare totalPlannedMinutes and availableMinutes using if/else.
+        // Step 3: Use the method calculateTotalMinutes to get the total.
         // TODO:
-        // if (totalPlannedMinutes < availableMinutes) {
-        //     System.out.println("Great! You still have some free time left.");
-        // } else if (totalPlannedMinutes == availableMinutes) {
-        //     System.out.println("Perfectly packed day! You used all available time.");
-        // } else {
-        //     System.out.println("Warning: You planned more than your available time.");
-        // }
+        // int totalPlannedMinutes = calculateTotalMinutes(taskMinutes);
+
+        // Step 4: Print totals and time advice (can reuse if/else from Lab 7).
+        // TODO: Implement the comparison logic here or in another method.
 
         scanner.close();
+    }
+
+    /**
+     * Calculates the sum of all elements in the minutes array.
+     */
+    private static int calculateTotalMinutes(int[] minutes) {
+        // TODO: Implement the loop to sum all elements and return the total.
+        // int total = 0;
+        // for (int i = 0; i < minutes.length; i++) {
+        //     total += minutes[i];
+        // }
+        // return total;
+
+        // Temporary return so code compiles before students fill it:
+        return 0;
     }
 }
