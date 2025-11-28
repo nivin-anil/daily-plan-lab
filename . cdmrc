@@ -1,0 +1,3 @@
+tabs: ["Main.java"]
+run-button: javac DailyPlan.java && java DailyPlan
+terminals: ["javac DailyPlan.java && java DailyPlan"]
